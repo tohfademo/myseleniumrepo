@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Portfolio Suite]" parallel="tests">
+  <test name="Portfolio Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.qtpselenium.rediff.hybrid.testcases.portfoliosuite.LoginTest">
+        <methods>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.qtpselenium.rediff.hybrid.testcases.portfoliosuite.LoginTest -->
+      <class name="com.qtpselenium.rediff.hybrid.testcases.portfoliosuite.PortFolioTest">
+        <methods>
+          <include name="quit"/>
+          <include name="deletePortFolioTest"/>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="createPortFolioTest" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.qtpselenium.rediff.hybrid.testcases.portfoliosuite.PortFolioTest -->
+    </classes>
+  </test> <!-- Portfolio Test(failed) -->
+</suite> <!-- Failed suite [Portfolio Suite] -->

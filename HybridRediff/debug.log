@@ -1,0 +1,18 @@
+[0411/102109.258:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0411/102109.308:ERROR:exception_snapshot_win.cc(88)] thread ID 7128 not found in process
+[0411/102109.309:WARNING:crash_report_exception_handler.cc(62)] ProcessSnapshotWin::Initialize failed
+[0411/112147.413:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0411/112147.413:ERROR:exception_snapshot_win.cc(88)] thread ID 16708 not found in process
+[0411/112147.414:WARNING:crash_report_exception_handler.cc(62)] ProcessSnapshotWin::Initialize failed
+[0411/112148.015:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0411/112148.016:ERROR:exception_snapshot_win.cc(88)] thread ID 12220 not found in process
+[0411/112148.016:WARNING:crash_report_exception_handler.cc(62)] ProcessSnapshotWin::Initialize failed
+[0411/112148.403:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0411/112148.404:ERROR:exception_snapshot_win.cc(88)] thread ID 996 not found in process
+[0411/112148.404:WARNING:crash_report_exception_handler.cc(62)] ProcessSnapshotWin::Initialize failed
+[0411/113801.788:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0411/113801.788:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0411/113801.789:ERROR:exception_snapshot_win.cc(88)] thread ID 18048 not found in process
+[0411/113801.789:WARNING:crash_report_exception_handler.cc(62)] ProcessSnapshotWin::Initialize failed
+[0411/113801.789:ERROR:exception_snapshot_win.cc(88)] thread ID 15356 not found in process
+[0411/113801.789:WARNING:crash_report_exception_handler.cc(62)] ProcessSnapshotWin::Initialize failed

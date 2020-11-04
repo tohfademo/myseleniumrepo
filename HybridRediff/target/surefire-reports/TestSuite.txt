@@ -1,0 +1,83 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 4, Errors: 0, Skipped: 1, Time elapsed: 260.639 sec <<< FAILURE!
+createPortFolioTest(com.qtpselenium.rediff.hybrid.testcases.portfoliosuite.PortFolioTest)  Time elapsed: 68.995 sec  <<< FAILURE!
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at com.qtpselenium.rediff.hybrid.driver.DriverScript.executeKeywords(DriverScript.java:47)
+	at com.qtpselenium.rediff.hybrid.testcases.portfoliosuite.PortFolioTest.createPortFolioTest(PortFolioTest.java:25)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Values Dont match. Got value as portfolio1801
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.qtpselenium.rediff.hybrid.keywords.GenericKeywords.reportFailure(GenericKeywords.java:348)
+	at com.qtpselenium.rediff.hybrid.keywords.GenericKeywords.waitTillSelectionToBe(GenericKeywords.java:269)
+	at com.qtpselenium.rediff.hybrid.keywords.AppKeywords.verifyPortFolio(AppKeywords.java:75)
+	... 26 more
+
+deleteStockTest(com.qtpselenium.rediff.hybrid.testcases.stocksuite.AddDelStockTest)  Time elapsed: 57.879 sec  <<< FAILURE!
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at com.qtpselenium.rediff.hybrid.driver.DriverScript.executeKeywords(DriverScript.java:47)
+	at com.qtpselenium.rediff.hybrid.testcases.stocksuite.AddDelStockTest.deleteStockTest(AddDelStockTest.java:37)
+Caused by: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DESKTOP-NM05SVP', ip: '192.168.1.12', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_05'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\lenovo\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true, webdriver.remote.sessionid: 5a4fb6240bbdd49f90486d0afc2...}
+Session ID: 5a4fb6240bbdd49f90486d0afc21c2f0
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:273)
+	at com.qtpselenium.rediff.hybrid.keywords.GenericKeywords.navigate(GenericKeywords.java:138)
+	... 26 more
+
+createPortFolioTest(com.qtpselenium.rediff.hybrid.testcases.portfoliosuite.PortFolioTest)  Time elapsed: 75.699 sec  <<< FAILURE!
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at com.qtpselenium.rediff.hybrid.driver.DriverScript.executeKeywords(DriverScript.java:47)
+	at com.qtpselenium.rediff.hybrid.testcases.portfoliosuite.PortFolioTest.createPortFolioTest(PortFolioTest.java:25)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Values Dont match. Got value as portfolio1801
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.qtpselenium.rediff.hybrid.keywords.GenericKeywords.reportFailure(GenericKeywords.java:348)
+	at com.qtpselenium.rediff.hybrid.keywords.GenericKeywords.waitTillSelectionToBe(GenericKeywords.java:269)
+	at com.qtpselenium.rediff.hybrid.keywords.AppKeywords.verifyPortFolio(AppKeywords.java:75)
+	... 26 more
+
+checkTransactionHistoryTest(com.qtpselenium.rediff.hybrid.testcases.stocksuite.BuySellStockTest)  Time elapsed: 122.917 sec  <<< FAILURE!
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at com.qtpselenium.rediff.hybrid.driver.DriverScript.executeKeywords(DriverScript.java:47)
+	at com.qtpselenium.rediff.hybrid.testcases.stocksuite.BuySellStockTest.checkTransactionHistoryTest(BuySellStockTest.java:34)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Actual average is 0.00Expected was 66.10169491525424
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.qtpselenium.rediff.hybrid.keywords.GenericKeywords.reportFailure(GenericKeywords.java:348)
+	at com.qtpselenium.rediff.hybrid.keywords.AppKeywords.checkHistory(AppKeywords.java:162)
+	... 26 more
+

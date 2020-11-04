@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Stock Suite]" parallel="tests">
+  <test name="Portfolio Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.qtpselenium.rediff.hybrid.testcases.stocksuite.AddDelStockTest">
+        <methods>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.qtpselenium.rediff.hybrid.testcases.stocksuite.AddDelStockTest -->
+      <class name="com.qtpselenium.rediff.hybrid.testcases.stocksuite.BuySellStockTest">
+        <methods>
+          <include name="buyOrSellStockTest"/>
+          <include name="checkTransactionHistoryTest" invocation-numbers="0"/>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.qtpselenium.rediff.hybrid.testcases.stocksuite.BuySellStockTest -->
+    </classes>
+  </test> <!-- Portfolio Test(failed) -->
+  <test name="Add Delete Stock Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.qtpselenium.rediff.hybrid.testcases.stocksuite.AddDelStockTest">
+        <methods>
+          <include name="deleteStockTest" invocation-numbers="0"/>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.qtpselenium.rediff.hybrid.testcases.stocksuite.AddDelStockTest -->
+      <class name="com.qtpselenium.rediff.hybrid.testcases.stocksuite.BuySellStockTest">
+        <methods>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.qtpselenium.rediff.hybrid.testcases.stocksuite.BuySellStockTest -->
+    </classes>
+  </test> <!-- Add Delete Stock Test(failed) -->
+</suite> <!-- Failed suite [Stock Suite] -->

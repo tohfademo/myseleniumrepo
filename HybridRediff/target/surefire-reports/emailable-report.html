@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Stock Suite</th></tr><tr><td><a href="#t0">Add Delete Stock Test</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">193,796</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t1">Portfolio Test</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">258,953</td><td></td><td></td></tr><tr><th colspan="7">My suite</th></tr><tr><th colspan="7">Portfolio Suite</th></tr><tr><td><a href="#t2">Login Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">180,537</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t3">Portfolio Test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num attn">2</td><td class="num">213,693</td><td></td><td></td></tr><tr><th>Total</th><th class="num">3</th><th class="num attn">1</th><th class="num attn">4</th><th class="num">846,979</th><th colspan="2"></th></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Stock Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Add Delete Stock Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qtpselenium.rediff.hybrid.testcases.stocksuite.AddDelStockTest</td><td><a href="#m0">deleteStockTest</a></td><td rowspan="1">1523444176743</td><td rowspan="1">63370</td></tr><tr><th colspan="4">Add Delete Stock Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.qtpselenium.rediff.hybrid.testcases.stocksuite.AddDelStockTest</td><td><a href="#m1">addStockTest</a></td><td rowspan="1">1523444047696</td><td rowspan="1">128776</td></tr></tbody><tbody id="t1"><tr><th colspan="4">Portfolio Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qtpselenium.rediff.hybrid.testcases.stocksuite.BuySellStockTest</td><td><a href="#m2">checkTransactionHistoryTest</a></td><td rowspan="1">1523444182232</td><td rowspan="1">122931</td></tr><tr><th colspan="4">Portfolio Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.qtpselenium.rediff.hybrid.testcases.stocksuite.BuySellStockTest</td><td><a href="#m3">buyOrSellStockTest</a></td><td rowspan="1">1523444047688</td><td rowspan="1">134263</td></tr></tbody><tbody><tr><th colspan="4">My suite</th></tr></tbody><tbody><tr><th colspan="4">Portfolio Suite</th></tr></tbody><tbody id="t2"><tr><th colspan="4">Login Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.qtpselenium.rediff.hybrid.testcases.portfoliosuite.LoginTest</td><td><a href="#m4">loginTest</a></td><td rowspan="1">1523444047688</td><td rowspan="1">179087</td></tr></tbody><tbody id="t3"><tr><th colspan="4">Portfolio Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.qtpselenium.rediff.hybrid.testcases.portfoliosuite.PortFolioTest</td><td><a href="#m5">createPortFolioTest</a></td><td rowspan="2">1523444047688</td><td rowspan="2">68995</td></tr><tr class="failedeven"><td><a href="#m6">createPortFolioTest</a></td></tr><tr><th colspan="4">Portfolio Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.qtpselenium.rediff.hybrid.testcases.portfoliosuite.PortFolioTest</td><td><a href="#m7">deletePortFolioTest</a></td><td rowspan="1">1523444260185</td><td rowspan="1">0</td></tr></tbody></table><h2>Add Delete Stock Test</h2><h3 id="m0">com.qtpselenium.rediff.hybrid.testcases.stocksuite.AddDelStockTest#deleteStockTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{PortfolioName=ashish, Runmode=Y, Stock Name=Tata Steel Ltd., Browser=Chrome}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.reflect.InvocationTargetException
+	at com.qtpselenium.rediff.hybrid.driver.DriverScript.executeKeywords(DriverScript.java:47)
+	at com.qtpselenium.rediff.hybrid.testcases.stocksuite.AddDelStockTest.deleteStockTest(AddDelStockTest.java:37)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;DESKTOP-NM05SVP&apos;, ip: &apos;192.168.1.12&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_05&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\lenovo\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true, webdriver.remote.sessionid: 5a4fb6240bbdd49f90486d0afc2...}
+Session ID: 5a4fb6240bbdd49f90486d0afc21c2f0
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:273)
+	at com.qtpselenium.rediff.hybrid.keywords.GenericKeywords.navigate(GenericKeywords.java:138)
+	... 26 more
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.qtpselenium.rediff.hybrid.testcases.stocksuite.AddDelStockTest#addStockTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Date=5/03/2018, PurchasePrice=200, PortfolioName=ashish, Runmode=Y, Stock Name=Tata Steel Ltd, Quantity=100, Browser=Chrome}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Portfolio Test</h2><h3 id="m2">com.qtpselenium.rediff.hybrid.testcases.stocksuite.BuySellStockTest#checkTransactionHistoryTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{PortfolioName=ashish, Runmode=Y, Stock Name=Reliance Inds., Browser=Chrome}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.reflect.InvocationTargetException
+	at com.qtpselenium.rediff.hybrid.driver.DriverScript.executeKeywords(DriverScript.java:47)
+	at com.qtpselenium.rediff.hybrid.testcases.stocksuite.BuySellStockTest.checkTransactionHistoryTest(BuySellStockTest.java:34)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Actual average is 0.00Expected was 66.10169491525424
+	at com.qtpselenium.rediff.hybrid.keywords.GenericKeywords.reportFailure(GenericKeywords.java:348)
+	at com.qtpselenium.rediff.hybrid.keywords.AppKeywords.checkHistory(AppKeywords.java:162)
+	... 26 more
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">com.qtpselenium.rediff.hybrid.testcases.stocksuite.BuySellStockTest#buyOrSellStockTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Date=5/03/2018, Action=Sell, PurchasePrice=200, PortfolioName=ashish, Runmode=Y, Stock Name=Reliance Inds., Quantity=100, Browser=Chrome}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Login Test</h2><h3 id="m4">com.qtpselenium.rediff.hybrid.testcases.portfoliosuite.LoginTest#loginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Username=ashishthakur1983, ExpectedResult=Loginsuccess, Password=pass@1234, Runmode=Y, Browser=Chrome}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Portfolio Test</h2><h3 id="m5">com.qtpselenium.rediff.hybrid.testcases.portfoliosuite.PortFolioTest#createPortFolioTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{PortfolioName=SamplePort1311, Runmode=Y, Browser=Chrome}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.reflect.InvocationTargetException
+	at com.qtpselenium.rediff.hybrid.driver.DriverScript.executeKeywords(DriverScript.java:47)
+	at com.qtpselenium.rediff.hybrid.testcases.portfoliosuite.PortFolioTest.createPortFolioTest(PortFolioTest.java:25)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Values Dont match. Got value as portfolio1801
+	at com.qtpselenium.rediff.hybrid.keywords.GenericKeywords.reportFailure(GenericKeywords.java:348)
+	at com.qtpselenium.rediff.hybrid.keywords.GenericKeywords.waitTillSelectionToBe(GenericKeywords.java:269)
+	at com.qtpselenium.rediff.hybrid.keywords.AppKeywords.verifyPortFolio(AppKeywords.java:75)
+	... 26 more
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m6">com.qtpselenium.rediff.hybrid.testcases.portfoliosuite.PortFolioTest#createPortFolioTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{PortfolioName=SamplePort1411, Runmode=Y, Browser=Mozilla}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.reflect.InvocationTargetException
+	at com.qtpselenium.rediff.hybrid.driver.DriverScript.executeKeywords(DriverScript.java:47)
+	at com.qtpselenium.rediff.hybrid.testcases.portfoliosuite.PortFolioTest.createPortFolioTest(PortFolioTest.java:25)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Values Dont match. Got value as portfolio1801
+	at com.qtpselenium.rediff.hybrid.keywords.GenericKeywords.reportFailure(GenericKeywords.java:348)
+	at com.qtpselenium.rediff.hybrid.keywords.GenericKeywords.waitTillSelectionToBe(GenericKeywords.java:269)
+	at com.qtpselenium.rediff.hybrid.keywords.AppKeywords.verifyPortFolio(AppKeywords.java:75)
+	... 26 more
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m7">com.qtpselenium.rediff.hybrid.testcases.portfoliosuite.PortFolioTest#deletePortFolioTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method PortFolioTest.deletePortFolioTest(java.util.Hashtable)[pri:2, instance:com.qtpselenium.rediff.hybrid.testcases.portfoliosuite.PortFolioTest@2cb4c3ab] depends on not successfully finished methods
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 9 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

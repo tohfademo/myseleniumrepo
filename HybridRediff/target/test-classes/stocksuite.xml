@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Stock Suite" parallel="tests">
+<test name="Add Delete Stock Test">
+    <classes>
+        <class name="com.qtpselenium.rediff.hybrid.testcases.stocksuite.AddDelStockTest" ></class>  
+    </classes>
+</test>
+
+<test name="Portfolio Test">
+    <classes>
+        <class name="com.qtpselenium.rediff.hybrid.testcases.stocksuite.BuySellStockTest" ></class>  
+    </classes>
+</test>
+
+</suite>
